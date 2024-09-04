@@ -41,10 +41,44 @@ a {
     font-weight: 600;
     border-radius: 999px;
     background: #171100;
+    cursor: pointer;
 }
 
 .btn:hover {
     opacity: 0.7;
+}
+
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    /* 117.241% */
+    letter-spacing: -1px;
+}
+
+.heading.lvl {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 /* Header */
@@ -189,7 +223,7 @@ a {
     line-height: 1.85;
 }
 
-.hero-summary .info .title {
+.hero-summary .info .title a {
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -205,15 +239,7 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.hero .heading {
-    color: #171100;
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17;
-    /* 117.241% */
-    letter-spacing: -1px;
-}
+
 
 .hero .desc {
     margin-top: 22px;
@@ -278,4 +304,144 @@ a {
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 5.4rem;
+}
+
+
+/* Popular */
+
+.popular {
+    padding: 65px 0px;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    /* 166.667% */
+}
+
+.popular .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+
+.popular .control-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* Couse List */
+
+.popular .course-list {
+    display: flex;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+    margin: -1px;
+
+    width: calc(100% + 2px);
+    object-fit: cover;
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+    padding: 16px 22px 22px 22px;
+}
+
+.popular .course-item .rating,
+.popular .course-item .foot,
+.popular .course-item .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a {
+    padding-right: 6px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    /* 166.667% */
+}
+
+.popular .rating .value {
+    margin-left: 6px;
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 175% */
+}
+
+.popular .course-item .desc {
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+}
+
+
+.popular .course-item .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.popular .course-item .book-btn {
+    border: none;
+}
+
+.popular .course-item .book-btn:hover {
+    background-color: var(--primary-color);
+    opacity: 1;
 }
