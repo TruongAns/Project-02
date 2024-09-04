@@ -445,3 +445,83 @@ a {
     background-color: var(--primary-color);
     opacity: 1;
 }
+
+
+/* Feedback */
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback .feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.feedback .info .title {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+    font-family: var(--font-heading);
+    /* 141.667% */
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.feedback-item .info .dots {
+    margin-top: 28px;
+    display: flex;
+}
+
+.feedback-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #604700;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background-color: #F9B800;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53;
+    /* 153.846% */
+}
