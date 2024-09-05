@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 02</title>
+    <title>Lesson.</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -21,44 +28,45 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
         rel="stylesheet">
 
-
 </head>
 
 <body>
-    <main style="height: 5000px;">
-        <!-- Header -->
-        <header class="header fixed">
-            <div class="main-content ">
-                <div class="body-header">
-                    <!-- Logo -->
+
+    <!-- Header -->
+    <header class="header fixed">
+        <div class="main-content ">
+            <div class="body-header">
+                <!-- Logo -->
+                <a href="#home">
                     <img src="./assets/img/logo.svg" alt="Lesson" class="logo">
-                    <!-- Nav -->
-                    <nav class="nav">
-                        <ul>
-                            <li class="active">
-                                <a href="#!">Home</a>
-                            </li>
-                            <li>
-                                <a href="#!">Courses</a>
-                            </li>
-                            <li>
-                                <a href="#!">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="#!">Reviews</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- Action -->
-                    <div class="action">
-                        <a href="#!" class="btn sign-up-btn">Sign Up</a>
-                    </div>
+                </a>
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul>
+                        <li class="active">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#courses">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Reviews</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Action -->
+                <div class="action">
+                    <a href="#!" class="btn sign-up-btn">Sign Up</a>
                 </div>
             </div>
-        </header>
-
+        </div>
+    </header>
+    <main>
         <!-- Hero -->
-        <div class="hero">
+        <div id="home" class="hero">
             <div class="main-content">
                 <div class="body">
                     <!-- Hero left -->
@@ -122,7 +130,7 @@
         </div>
 
         <!-- Popular -->
-        <div class="popular">
+        <div id="courses" class="popular">
             <div class="main-content">
                 <div class="popular-top">
                     <div class="info">
@@ -294,7 +302,7 @@
         </div>
 
         <!-- Features 1-->
-        <div class="features">
+        <div id="pricing" class="features">
             <div class="main-content">
                 <div class="body">
                     <div class="images">
@@ -331,7 +339,7 @@
         </div>
 
         <!-- Blog -->
-        <div class="blog">
+        <div id="reviews" class="blog">
             <div class="main-content">
                 <div class="blog-top">
                     <h2 class="heading lv2">Our blog</h2>
@@ -474,6 +482,99 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="main-content">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="column">
+                    <a href="#home">
+                        <img src="./assets/img/icon/logo2.svg" alt="" class="logo">
+                    </a>
+                    <p class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot
+                        easier with us.</p>
+                    <div class="socials">
+                        <a href="#!">
+                            <img src="./assets/img/icon/Twitter.svg" alt="Twitter" class="icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/img/icon/Facebook.svg" alt="Facebook" class="icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/img/icon/Linkedin.svg" alt="Linkedin" class="icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/img/icon/Instagram.svg" alt="Instagram" class="icon">
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="column">
+                    <h3 class="heading lv3">Company</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Features</a>
+                        </li>
+                        <li>
+                            <a href="#!">Our Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Latest News</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="column">
+                    <h3 class="heading lv3">Support</h3>
+                    <ul class="list">
+                        <li>
+                            <a href="#!">FAQ’s</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="column">
+                    <h3 class="heading lv3">Address</h3>
+                    <ul class="list">
+                        <a href="" target="_blank"></a>
+                        <li>
+                            <a href="https://www.google.com/maps/place/27+Division+St,+New+York,+NY+10002,+Hoa+K%E1%BB%B3/@40.7139783,-73.9986909,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a263f3910db:0xd6e6cdf32a6b11b1!8m2!3d40.7139743!4d-73.996116!16s%2Fg%2F11bw3xg9xp?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D"
+                                target="_blank">
+                                <strong>Location:</strong> 27 Division St, New York, NY 10002, USA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:email@gmail.com">
+                                <strong>Email:</strong> email@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:000 1234 567 890">
+                                <strong>Phone:</strong> + 000 1234 567 890
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
