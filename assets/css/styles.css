@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +65,19 @@ a {
 .heading.lv2 {
     font-size: 38px;
     line-height: 48px;
+}
+
+.heading.lv3 {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    font-family: Poppins;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    border-bottom: 1px solid #59554B;
+    ;
+    /* 175% */
 }
 
 .line-clamp {
@@ -639,6 +653,7 @@ a {
 }
 
 .blog .blog-item:hover {
+
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -732,4 +747,78 @@ a {
     cursor: default;
     background-color: var(--primary-color);
 
+}
+
+/* Footer */
+
+.footer {
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554B;
+
+}
+
+.footer .row .column {
+    width: 21.6%;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .desc {
+    max-width: 267px;
+    margin: 18px 0;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    /* 185.714% */
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 111px;
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .list strong {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85;
+    /* 185.714% */
+}
+
+.footer .copyright {
+    padding: 28px 0;
+    text-align: center;
+    color: #807D74;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    /* 185.714% */
 }
